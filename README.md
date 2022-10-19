@@ -31,6 +31,7 @@ El sistema permite asignar 1973 secuencias de las 2 licenciaturas y de las 3 ing
 ## Descarga
 
 - Via Git
+
 Clonar en tu maquina
 
 ``git clone https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria``
@@ -40,6 +41,7 @@ Clonar en tu maquina
 [Descargar Java 16.0.2](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)
 
 Se debe seleccionar la siguiente opción
+
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install1.jpg?raw=true)
 
 2. Crear una cuenta para proceder con la descarga
@@ -80,6 +82,8 @@ Se debe seleccionar la siguiente opción
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install14.jpg?raw=true)
 
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install16.jpg?raw=true)
+
+### CMD
 
 - Para comprobar que el procedimiento se hizo correctamente ejecutamos el siguiente comando y podremos ver que ya esta instalada la version 3.8.1
 
