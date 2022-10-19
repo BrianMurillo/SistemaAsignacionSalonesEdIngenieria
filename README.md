@@ -4,9 +4,10 @@ Sistema para  la asignación de los salones del edificio de ingeniería de la Un
 El sistema permite asignar 1973 secuencias de las 2 licenciaturas y de las 3 ingenierías que se imparten en esa unidad, también permite la generación de los horarios de todas las clases en los 50 salones.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/4a/UPIICSA.jpg)
+
 ***Edificio de ingeniería UPIICSA***
 
-##Capturas
+## Capturas
 
 ![](https://brianmurillo.github.io/CienciasUPIICSA/img/portfolio/allocationsystem/salones1.jpg)
 
@@ -20,21 +21,21 @@ El sistema permite asignar 1973 secuencias de las 2 licenciaturas y de las 3 ing
 
 ![](https://brianmurillo.github.io/CienciasUPIICSA/img/portfolio/allocationsystem/salones9.jpg)
 
-##Tecnologias usadas 🛠️
+## Tecnologias usadas 🛠️
 - Java JDK 16.0.2
 - Maven 3.8.5
 - Interfaz de usuario Java Swing
 - Libreria Apache POI 3.17
 - IDE Apache Neatbeans 12.4
 
-##Descarga
+## Descarga
 
 - Via Git
 Clonar en tu maquina
 
 ``git clone https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria``
 
-##Instalación de Java
+## Instalación de Java
 1. Descargar java desde la pagina oficial de ORACLE
 [Descargar Java 16.0.2](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)
 Se debe seleccionar la siguiente opción
@@ -45,21 +46,21 @@ Se debe seleccionar la siguiente opción
 
 3. Instalar Java como cualquier otro programa
 
-###Configurar variables de entorno
+## Configurar variables de entorno
 - Debe copiar la ruta donde se instalo java para posteriormente configurar las variables de entorno
 
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install6.jpg?raw=true)
 
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install9.jpg?raw=true)
 
-#### CMD
+### CMD
 
 - Para comprobar que el procedimiento se hizo correctamente ejecutamos el siguiente comando y podremos ver que ya esta instalada la version 16.0.2
 
 ``C:\Users\user>java -version``
 ``java version "16.0.2" 2021-07-20 Java(TM) SE Runtime Environment (build  16.0.2+7-67) Java HotSpot(TM) 64-Bit Server VM (build 16.0.2+7-67, mixed mode, sharing)``
 
-##Instalación de MVN
+## Instalación de MVN
 
 1. Entrar a la página oficial de Maven y dar clic en "Download”
 2. Elegir la opción apache-maven-3.8.5-bin.zip
@@ -70,7 +71,7 @@ Se debe seleccionar la siguiente opción
 
 ``C:\Program Files\``
 
-###Configurar variables de entorno
+### Configurar variables de entorno
 - Debe copiar la ruta donde se instalo maven para posteriormente configurar las variables de entorno de la misma manera que se hizo con java.
 
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install14.jpg?raw=true)
@@ -85,18 +86,22 @@ Se debe seleccionar la siguiente opción
 Una vez hecho las instalaciones se debera copiar la carpeta imgsistemasalones que contiene todas las imágenes que ocupara el sistema en la ruta raiz.
 ``C:\``
 
-####Instalador
+### Instalador
 El instalador se encuentra en la carpeta instalador, y se instala como culquier programa.
 
-#### Colaboradores
+### Colaboradores
 - Desarrolladores
+
 -Murillo Salas Brian [https://github.com/BrianMurillo](https://github.com/BrianMurillo)
+
 -Baños Becerril Dante
 
 - Documentación y testing
+
 -Rebollar Gonzales Habraham Yael
+
 -Campos Alba Eduardo
 
 
 
-###Licencia 📄
+### Licencia 📄
