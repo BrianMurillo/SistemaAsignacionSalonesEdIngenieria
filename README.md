@@ -38,10 +38,12 @@ Clonar en tu maquina
 ## Instalación de Java
 1. Descargar java desde la pagina oficial de ORACLE
 [Descargar Java 16.0.2](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)
+
 Se debe seleccionar la siguiente opción
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install1.jpg?raw=true)
 
 2. Crear una cuenta para proceder con la descarga
+
 ![](https://github.com/BrianMurillo/SistemaAsignacionSalonesEdIngenieria/blob/main/img_instalacion/install2.jpg?raw=true)
 
 3. Instalar Java como cualquier otro programa
@@ -58,6 +60,7 @@ Se debe seleccionar la siguiente opción
 - Para comprobar que el procedimiento se hizo correctamente ejecutamos el siguiente comando y podremos ver que ya esta instalada la version 16.0.2
 
 ``C:\Users\user>java -version``
+
 ``java version "16.0.2" 2021-07-20 Java(TM) SE Runtime Environment (build  16.0.2+7-67) Java HotSpot(TM) 64-Bit Server VM (build 16.0.2+7-67, mixed mode, sharing)``
 
 ## Instalación de MVN
@@ -81,6 +84,7 @@ Se debe seleccionar la siguiente opción
 - Para comprobar que el procedimiento se hizo correctamente ejecutamos el siguiente comando y podremos ver que ya esta instalada la version 3.8.1
 
 ``C:\Users\user>mvn -v``
+
 ``Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d) Maven home: C:\apache-maven-3.8.1\bin\..Java version: 16.0.2, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-16.0.2 Default locale: es_MX, platform encoding: Cp1252 OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"``
 
 Una vez hecho las instalaciones se debera copiar la carpeta imgsistemasalones que contiene todas las imágenes que ocupara el sistema en la ruta raiz.
