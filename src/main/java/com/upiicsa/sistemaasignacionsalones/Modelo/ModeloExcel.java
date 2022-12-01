@@ -96,9 +96,9 @@ public class ModeloExcel {
             Sheet hoja = wb.createSheet("asignacion salones");
             Row fila = hoja.createRow(0);
             //Header excel
-            while (i < 16) {
-                if (i > 4) {
-                    if (i == 5 || i == 7 || i == 9 || i == 11 | i == 13) {
+            while (i < 17) {
+                if (i > 5) {
+                    if (i == 6 || i == 8 || i == 10 || i == 12 | i == 14) {
                         Cell celda = fila.createCell(i);
                         celda.setCellValue("SALON");
                         decremento_H++;
@@ -117,47 +117,47 @@ public class ModeloExcel {
             //Body excel
             while (y < numFila) {
                 Row filaCuerpo = hoja.createRow(y + 1);
-                while (j < 16) {
-                    if (j > 4) {
-                        if (j == 5 || j == 7 || j ==9 || j == 11 | j == 13) {  
+                while (j < 17) {
+                    if (j > 5) {
+                        if (j == 6 || j == 8 || j == 10 || j == 12 | j == 14) {  
                             String salon="";                             
                             switch (j) {                                
-                                case 5:
+                                case 6:
                                     celdaCuerpo = filaCuerpo.createCell(j);
                                     //Piso y horario recibe el metodo
-                                    salon=generacionSalonLunes.salonPiso(tablaD.getValueAt(y, 10).toString(),tablaD.getValueAt(y, 4).toString());
+                                    salon=generacionSalonLunes.salonPiso(tablaD.getValueAt(y, 11).toString(),tablaD.getValueAt(y, 5).toString());
                                     celdaCuerpo.setCellValue(salon);
                                     decremento_B++;
                                     j++;
                                     break;
-                                case 7:
+                                case 8:
                                     celdaCuerpo = filaCuerpo.createCell(j);
                                     //Piso y horario recibe el metodo
-                                    salon=generacionSalonMartes.salonPiso(tablaD.getValueAt(y, 10).toString(),tablaD.getValueAt(y, 5).toString());
+                                    salon=generacionSalonMartes.salonPiso(tablaD.getValueAt(y, 11).toString(),tablaD.getValueAt(y, 6).toString());
                                     celdaCuerpo.setCellValue(salon);
                                     decremento_B++;
                                     j++;
                                     break;
-                                case 9:
+                                case 10:
                                     celdaCuerpo = filaCuerpo.createCell(j);
                                     //Piso y horario recibe el metodo
-                                    salon=generacionSalonMiercoles.salonPiso(tablaD.getValueAt(y, 10).toString(),tablaD.getValueAt(y, 6).toString());
+                                    salon=generacionSalonMiercoles.salonPiso(tablaD.getValueAt(y, 11).toString(),tablaD.getValueAt(y, 7).toString());
                                     celdaCuerpo.setCellValue(salon);;
                                     decremento_B++;
                                     j++;
                                     break;
-                                case 11:
+                                case 12:
                                     celdaCuerpo = filaCuerpo.createCell(j);
                                     //Piso y horario recibe el metodo
-                                    salon=generacionSalonJueves.salonPiso(tablaD.getValueAt(y, 10).toString(),tablaD.getValueAt(y, 7).toString());
+                                    salon=generacionSalonJueves.salonPiso(tablaD.getValueAt(y, 11).toString(),tablaD.getValueAt(y, 8).toString());
                                     celdaCuerpo.setCellValue(salon);
                                     decremento_B++;
                                     j++;
                                     break;
-                                case 13:
+                                case 14:
                                     celdaCuerpo = filaCuerpo.createCell(j);
                                     //Piso y horario recibe el metodo
-                                    salon=generacionSalonViernes.salonPiso(tablaD.getValueAt(y, 10).toString(),tablaD.getValueAt(y, 8).toString());
+                                    salon=generacionSalonViernes.salonPiso(tablaD.getValueAt(y, 11).toString(),tablaD.getValueAt(y, 9).toString());
                                     celdaCuerpo.setCellValue(salon);
                                     decremento_B++;
                                     j++;
@@ -206,58 +206,58 @@ public class ModeloExcel {
         while (y < numFila) {
             //Leeemos fila
             Row row = sheet.getRow(y + 1);
-            while (j < 16) {
-                if (j == 5 || j == 7 || j == 9 || j == 11 | j == 13) {
+            while (j < 17) {
+                if (j == 6 || j == 8 || j == 10 || j == 12 | j == 14) {
                     switch (j) {
-                        case 5:
-                            Cell academiaL = row.getCell(2);
-                            Cell salonL = row.getCell(5);
-                            Cell horarioL = row.getCell(4);
-                            Cell laboratorioL = row.getCell(14);
+                        case 6:
+                            Cell academiaL = row.getCell(3);
+                            Cell salonL = row.getCell(6);
+                            Cell horarioL = row.getCell(5);
+                            Cell laboratorioL = row.getCell(15);
                             if ("s/a".equals(salonL.toString()) && "LAB".equals(laboratorioL.toString())) {
                                 String nombreSalon = generacionSalonLunes.salonLab(academiaL.toString(),horarioL.toString());
                                 salonL.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 7:
-                            Cell academiaM = row.getCell(2);
-                            Cell salonM = row.getCell(7);
-                            Cell horarioM = row.getCell(6);
-                            Cell laboratorioM = row.getCell(14);
+                        case 8:
+                            Cell academiaM = row.getCell(3);
+                            Cell salonM = row.getCell(8);
+                            Cell horarioM = row.getCell(7);
+                            Cell laboratorioM = row.getCell(15);
                             if ("s/a".equals(salonM.toString()) && "LAB".equals(laboratorioM.toString())) {
                                 String nombreSalon = generacionSalonMartes.salonLab(academiaM.toString(),horarioM.toString());
                                 salonM.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 9:
-                            Cell academiaMi = row.getCell(2);
-                            Cell salonMi = row.getCell(9);
-                            Cell horarioMi = row.getCell(8);
-                            Cell laboratorioMi = row.getCell(14);
+                        case 10:
+                            Cell academiaMi = row.getCell(3);
+                            Cell salonMi = row.getCell(10);
+                            Cell horarioMi = row.getCell(9);
+                            Cell laboratorioMi = row.getCell(15);
                             if ("s/a".equals(salonMi.toString()) && "LAB".equals(laboratorioMi.toString())) {
                                 String nombreSalon = generacionSalonMiercoles.salonLab(academiaMi.toString(),horarioMi.toString());
                                 salonMi.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 11:
-                            Cell academiaJ = row.getCell(2);
-                            Cell salonJ = row.getCell(11);
-                            Cell horarioJ = row.getCell(10);
-                            Cell laboratorioJ = row.getCell(14);
+                        case 12:
+                            Cell academiaJ = row.getCell(3);
+                            Cell salonJ = row.getCell(12);
+                            Cell horarioJ = row.getCell(11);
+                            Cell laboratorioJ = row.getCell(15);
                             if ("s/a".equals(salonJ.toString()) && "LAB".equals(laboratorioJ.toString())) {
                                 String nombreSalon = generacionSalonJueves.salonLab(academiaJ.toString(),horarioJ.toString());
                                 salonJ.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 13:
-                            Cell academiaV = row.getCell(2);
-                            Cell salonV = row.getCell(13);
-                            Cell horarioV = row.getCell(12);
-                            Cell laboratorioV = row.getCell(14);
+                        case 14:
+                            Cell academiaV = row.getCell(3);
+                            Cell salonV = row.getCell(14);
+                            Cell horarioV = row.getCell(13);
+                            Cell laboratorioV = row.getCell(15);
                             if ("s/a".equals(salonV.toString()) && "LAB".equals(laboratorioV.toString())) {
                                 String nombreSalon = generacionSalonViernes.salon(academiaV.toString(),horarioV.toString());
                                 salonV.setCellValue(nombreSalon);
@@ -281,53 +281,53 @@ public class ModeloExcel {
         while (y < numFila) {
             //Leeemos fila
             Row row = sheet.getRow(y + 1);
-            while (j < 16) {
-                if (j == 5 || j == 7 || j == 9 || j == 11 | j == 13) {
+            while (j < 17) {
+                if (j == 6 || j == 8 || j == 10 || j == 12 | j == 14) {
                     switch (j) {
-                        case 5:
-                            Cell academiaL = row.getCell(2);
-                            Cell salonL = row.getCell(5);
-                            Cell horarioL = row.getCell(4);
+                        case 6:
+                            Cell academiaL = row.getCell(3);
+                            Cell salonL = row.getCell(6);
+                            Cell horarioL = row.getCell(5);
                             if ("s/a".equals(salonL.toString())) {
                                 String nombreSalon = generacionSalonLunes.salon(academiaL.toString(),horarioL.toString());
                                 salonL.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 7:
-                            Cell academiaM = row.getCell(2);
-                            Cell salonM = row.getCell(7);
-                            Cell horarioM = row.getCell(6);
+                        case 8:
+                            Cell academiaM = row.getCell(3);
+                            Cell salonM = row.getCell(8);
+                            Cell horarioM = row.getCell(7);
                             if ("s/a".equals(salonM.toString())) {
                                 String nombreSalon = generacionSalonMartes.salon(academiaM.toString(),horarioM.toString());
                                 salonM.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 9:
-                            Cell academiaMi = row.getCell(2);
-                            Cell salonMi = row.getCell(9);
-                            Cell horarioMi = row.getCell(8);
+                        case 10:
+                            Cell academiaMi = row.getCell(3);
+                            Cell salonMi = row.getCell(10);
+                            Cell horarioMi = row.getCell(9);
                             if ("s/a".equals(salonMi.toString())) {
                                 String nombreSalon = generacionSalonMiercoles.salon(academiaMi.toString(),horarioMi.toString());
                                 salonMi.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 11:
-                            Cell academiaJ = row.getCell(2);
-                            Cell salonJ = row.getCell(11);
-                            Cell horarioJ = row.getCell(10);
+                        case 12:
+                            Cell academiaJ = row.getCell(3);
+                            Cell salonJ = row.getCell(12);
+                            Cell horarioJ = row.getCell(11);
                             if ("s/a".equals(salonJ.toString())) {
                                 String nombreSalon = generacionSalonJueves.salon(academiaJ.toString(),horarioJ.toString());
                                 salonJ.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 13:
-                            Cell academiaV = row.getCell(2);
-                            Cell salonV = row.getCell(13);
-                            Cell horarioV = row.getCell(12);
+                        case 14:
+                            Cell academiaV = row.getCell(3);
+                            Cell salonV = row.getCell(14);
+                            Cell horarioV = row.getCell(13);
                             if ("s/a".equals(salonV.toString())) {
                                 String nombreSalon = generacionSalonViernes.salon(academiaV.toString(),horarioV.toString());
                                 salonV.setCellValue(nombreSalon);
@@ -351,48 +351,48 @@ public class ModeloExcel {
         while (y < numFila) {
             //Leeemos fila
             Row row = sheet.getRow(y + 1);
-            while (j < 16) {
-                if (j == 5 || j == 7 || j == 9 || j == 11 | j == 13) {
+            while (j < 17) {
+                if (j == 6 || j == 8 || j == 10 || j == 12 | j == 14) {
                     switch (j) {
-                        case 5:
-                            Cell salonL = row.getCell(5);
-                            Cell horarioL = row.getCell(4);
+                        case 6:
+                            Cell salonL = row.getCell(6);
+                            Cell horarioL = row.getCell(5);
                             if ("s/a".equals(salonL.toString())) {
                                 String nombreSalon = generacionSalonLunes.salon(horarioL.toString());
                                 salonL.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 7:
-                            Cell salonM = row.getCell(7);
-                            Cell horarioM = row.getCell(6);
+                        case 8:
+                            Cell salonM = row.getCell(8);
+                            Cell horarioM = row.getCell(7);
                             if ("s/a".equals(salonM.toString())) {
                                 String nombreSalon = generacionSalonMartes.salon(horarioM.toString());
                                 salonM.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 9:
-                            Cell salonMi = row.getCell(9);
-                            Cell horarioMi = row.getCell(8);
+                        case 10:
+                            Cell salonMi = row.getCell(10);
+                            Cell horarioMi = row.getCell(9);
                             if ("s/a".equals(salonMi.toString())) {
                                 String nombreSalon = generacionSalonMiercoles.salon(horarioMi.toString());
                                 salonMi.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 11:
-                            Cell salonJ = row.getCell(11);
-                            Cell horarioJ = row.getCell(10);
+                        case 12:
+                            Cell salonJ = row.getCell(12);
+                            Cell horarioJ = row.getCell(11);
                             if ("s/a".equals(salonJ.toString())) {
                                 String nombreSalon = generacionSalonJueves.salon(horarioJ.toString());
                                 salonJ.setCellValue(nombreSalon);
                             }
                             j++;
                             break;
-                        case 13:
-                            Cell salonV = row.getCell(13);
-                            Cell horarioV = row.getCell(12);
+                        case 14:
+                            Cell salonV = row.getCell(14);
+                            Cell horarioV = row.getCell(13);
                             if ("s/a".equals(salonV.toString())) {
                                 String nombreSalon = generacionSalonViernes.salon(horarioV.toString());
                                 salonV.setCellValue(nombreSalon);
