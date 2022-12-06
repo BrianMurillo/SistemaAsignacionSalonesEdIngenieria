@@ -449,9 +449,9 @@ public class ModeloExcel {
         return false;
     }
     
-    public boolean generarHorarios(File archivo, JTable tablaD) throws IOException {
+    public boolean generarHorarios(File archivo, JTable tablaD, String periodoEscolar) throws IOException {
         try{
-            if(generacionHorarios.generarHorarios(archivo, tablaD)){
+            if(generacionHorarios.generarHorarios(archivo, tablaD, periodoEscolar)){
                 return true;
             } else {
                 return false;

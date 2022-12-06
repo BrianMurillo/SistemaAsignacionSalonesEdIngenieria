@@ -63,6 +63,7 @@ public class ControladorExcel implements ActionListener{
         vistaE.menuItemJueves.setEnabled(false);
         vistaE.menuItemViernes.setEnabled(false);
         vistaE.menuItemExportarExcel.setEnabled(false);
+        vistaE.txtPeriodoEscolar.setEnabled(false);
     }
     
     public void AgregarFiltro(){
@@ -175,6 +176,7 @@ public class ControladorExcel implements ActionListener{
                             vistaE.btnImportarSecuencias.setEnabled(false);
                             vistaE.btnGenerarHorarios.setEnabled(true);
                             vistaE.checkBoxVerHorario.setEnabled(false);
+                            vistaE.txtPeriodoEscolar.setEnabled(true);
                             if (vistaE.checkBoxVerHorario.isSelected()) {
                                 vistaE.menuItemLunes.setEnabled(false);
                                 vistaE.menuItemMartes.setEnabled(false);
@@ -212,12 +214,16 @@ public class ControladorExcel implements ActionListener{
             if(selectArchivo.showDialog(null, "Seleccionar archivo") == JFileChooser.APPROVE_OPTION){
                 archivo = selectArchivo.getSelectedFile();
                 if(archivo.getName().endsWith("xls") || archivo.getName().endsWith("xlsx")){
-                    try {                        
-                        if(modeloE.generarHorarios(archivo, vistaE.jtDatos)){
-                            JOptionPane.showMessageDialog(null,"Exportación de horarios exitosa");
-                            limpiar();
-                        }else {
-                            JOptionPane.showMessageDialog(null,"No se pudo realizar la exportación");                                            
+                    try {
+                        if (!"".equals(vistaE.txtPeriodoEscolar.getText())) {
+                            if (modeloE.generarHorarios(archivo, vistaE.jtDatos, vistaE.txtPeriodoEscolar.getText())) {
+                                JOptionPane.showMessageDialog(null, "Exportación de horarios exitosa");
+                                limpiar();
+                            } else {
+                                JOptionPane.showMessageDialog(null, "No se pudo realizar la exportación");
+                            }
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Ingrese el periodo escolar!");
                         }
                     } catch (IOException ex) {
                         Logger.getLogger(ControladorExcel.class.getName()).log(Level.SEVERE, null, ex);
@@ -331,6 +337,8 @@ public class ControladorExcel implements ActionListener{
     public void limpiar() {
         modeloE.limpiarTabla();
         modeloE.limpiarObjetos();
+        vistaE.txtPeriodoEscolar.setText("");
+        vistaE.txtPeriodoEscolar.setEnabled(false);
         vistaE.btnImportar.setEnabled(true);
         vistaE.btnExportarSecuencias.setEnabled(false);
         vistaE.btnImportarSecuencias.setEnabled(false);

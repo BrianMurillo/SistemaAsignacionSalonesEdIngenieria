@@ -38,7 +38,7 @@ public class EstiloHorario {
     int imgIndex;
     
     
-    public void agregarDiseñoEncabezado(Workbook wb, Sheet hoja) throws FileNotFoundException, IOException {
+    public void agregarDiseñoEncabezado(Workbook wb, Sheet hoja, String periodoEscolar) throws FileNotFoundException, IOException {
         Row filasEncabezado;
         InputStream inputStream;
         Row fila = hoja.createRow(0);            
@@ -117,7 +117,7 @@ public class EstiloHorario {
             filasEncabezado = hoja.createRow(4);
             Cell celdaPeriodo = filasEncabezado.createCell(1);
             celdaPeriodo.setCellStyle(tituloEstilo);
-            celdaPeriodo.setCellValue("Ciclo Escolar:");
+            celdaPeriodo.setCellValue("Ciclo Escolar: "+periodoEscolar);
             hoja.addMergedRegion(new CellRangeAddress(4, 4, 1, 2));            
             //Academia
             Cell celdaAcademia = filasEncabezado.createCell(3);

@@ -38,7 +38,7 @@ public class GeneracionHorario {
     String[] obtenerDatos = new String[8];
     String salon = "";
 
-    public boolean generarHorarios(File archivo, JTable tablaD) throws IOException {
+    public boolean generarHorarios(File archivo, JTable tablaD, String periodoEscolar) throws IOException {
         int filas = tablaD.getRowCount();
         int y = 0;
         Workbook wb;
@@ -110,64 +110,64 @@ public class GeneracionHorario {
             Sheet hoja214 = wb.createSheet("214");
             
             //Basicas de la ingenieria
-            estiloHorario.agregarDiseñoEncabezado(wb, hojaD1);            
-            estiloHorario.agregarDiseñoEncabezado(wb, hojaD2);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja216);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja217);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja218);
+            estiloHorario.agregarDiseñoEncabezado(wb, hojaD1, periodoEscolar);            
+            estiloHorario.agregarDiseñoEncabezado(wb, hojaD2, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja216, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja217, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja218, periodoEscolar);
             //Computacion
-            estiloHorario.agregarDiseñoEncabezado(wb, hojaOriente);
-            estiloHorario.agregarDiseñoEncabezado(wb, hojaRedes);
-            estiloHorario.agregarDiseñoEncabezado(wb, hojaProgramacion);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja201);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja202);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja203);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja307);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja308);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja309);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja310);
+            estiloHorario.agregarDiseñoEncabezado(wb, hojaOriente, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hojaRedes, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hojaProgramacion, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja201, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja202, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja203, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja307, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja308, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja309, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja310, periodoEscolar);
             //Informatica
-            estiloHorario.agregarDiseñoEncabezado(wb, hojaPoniente);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja104);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja105);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja106);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja113);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja114);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja114A);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja115);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja215);
+            estiloHorario.agregarDiseñoEncabezado(wb, hojaPoniente, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja104, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja105, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja106, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja113, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja114, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja114A, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja115, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja215, periodoEscolar);
             //Ingenieria industrial
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja101);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja102);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja103);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja115A);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja116);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja117);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja118);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja101, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja102, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja103, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja115A, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja116, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja117, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja118, periodoEscolar);
             //Investigacion de operaciones
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja301);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja302);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja303);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja304);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja305);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja306);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja204);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja205);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja301, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja302, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja303, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja304, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja305, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja306,periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja204, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja205, periodoEscolar);
             //Produccion
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja1);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja2);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja3);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja4);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja5);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja6);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja7);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja1, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja2, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja3, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja4, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja5, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja6, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja7, periodoEscolar);
             //Sistemas de transporte
-            estiloHorario.agregarDiseñoEncabezado(wb, hojaTransporte);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja206);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja211);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja212);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja213);
-            estiloHorario.agregarDiseñoEncabezado(wb, hoja214);
+            estiloHorario.agregarDiseñoEncabezado(wb, hojaTransporte, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja206, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja211, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja212, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja213, periodoEscolar);
+            estiloHorario.agregarDiseñoEncabezado(wb, hoja214, periodoEscolar);
             //Nombre de salon
             horarioSecuenciaLunes.setSalonStyle(estiloMateria.styleNombreSalon(wb));
             
