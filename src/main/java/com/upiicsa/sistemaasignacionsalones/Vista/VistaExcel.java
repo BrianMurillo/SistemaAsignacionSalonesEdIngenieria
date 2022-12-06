@@ -52,15 +52,15 @@ public class VistaExcel extends javax.swing.JFrame {
 
         btnImportar.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         btnImportar.setText("Importar Archivo");
-        btnImportar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnImportar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnExportarSecuencias.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         btnExportarSecuencias.setText("Generar Archivo Secuencias");
-        btnExportarSecuencias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnExportarSecuencias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnGenerarHorarios.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         btnGenerarHorarios.setText("Generar Archivo Horarios");
-        btnGenerarHorarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnGenerarHorarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jtDatos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -77,11 +77,11 @@ public class VistaExcel extends javax.swing.JFrame {
         btnBorrar.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         btnBorrar.setForeground(new java.awt.Color(255, 255, 255));
         btnBorrar.setText("Limpiar");
-        btnBorrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnBorrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnImportarSecuencias.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         btnImportarSecuencias.setText("Importar Archivo Secuencia");
-        btnImportarSecuencias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnImportarSecuencias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -97,7 +97,7 @@ public class VistaExcel extends javax.swing.JFrame {
         jLabel4.setText(" 2022 - 2023 © CIENCIAS DE LA INFORMÁTICA UPIICSA");
 
         checkBoxVerHorario.setText("Generar Horario");
-        checkBoxVerHorario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        checkBoxVerHorario.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setText("PERIODO ESCOLAR    -");
@@ -105,85 +105,85 @@ public class VistaExcel extends javax.swing.JFrame {
         menuBarDisponibilidad.setBackground(new java.awt.Color(255, 255, 255));
 
         jMenu2.setText("Archivo");
-        jMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         menuItemExportarExcel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemExportarExcel.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\excel.png")); // NOI18N
         menuItemExportarExcel.setText("Exportar excel");
-        menuItemExportarExcel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemExportarExcel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu2.add(menuItemExportarExcel);
 
         menuBarDisponibilidad.add(jMenu2);
 
         jMenu1.setBackground(new java.awt.Color(204, 255, 204));
         jMenu1.setText("Disponibilidad");
-        jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         menuItemLunes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemLunes.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\dia.png")); // NOI18N
         menuItemLunes.setText("Lunes");
-        menuItemLunes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemLunes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu1.add(menuItemLunes);
 
         menuItemMartes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemMartes.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\dia.png")); // NOI18N
         menuItemMartes.setText("Martes");
-        menuItemMartes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemMartes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu1.add(menuItemMartes);
 
         menuItemMiercoles.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemMiercoles.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\dia.png")); // NOI18N
         menuItemMiercoles.setText("Miércoles");
-        menuItemMiercoles.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemMiercoles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu1.add(menuItemMiercoles);
 
         menuItemJueves.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemJueves.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\dia.png")); // NOI18N
         menuItemJueves.setText("Jueves");
-        menuItemJueves.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemJueves.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu1.add(menuItemJueves);
 
         menuItemViernes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemViernes.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\dia.png")); // NOI18N
         menuItemViernes.setText("Viernes");
-        menuItemViernes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemViernes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu1.add(menuItemViernes);
 
         menuBarDisponibilidad.add(jMenu1);
 
         jMenu3.setText("Ayuda");
-        jMenu3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jMenu3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         menuInstrucciones.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\ayuda.png")); // NOI18N
         menuInstrucciones.setText("Instrucciones");
-        menuInstrucciones.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuInstrucciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuInstrucciones.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         menuItemPaso1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemPaso1.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\paso.png")); // NOI18N
         menuItemPaso1.setText("Paso 1");
-        menuItemPaso1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemPaso1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuInstrucciones.add(menuItemPaso1);
 
         menuItemPaso2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemPaso2.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\paso.png")); // NOI18N
         menuItemPaso2.setText("Paso 2");
-        menuItemPaso2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemPaso2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuInstrucciones.add(menuItemPaso2);
 
         menuItemPaso3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemPaso3.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\paso.png")); // NOI18N
         menuItemPaso3.setText("Paso 3");
-        menuItemPaso3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemPaso3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuInstrucciones.add(menuItemPaso3);
 
         menuItemPaso4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemPaso4.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\paso.png")); // NOI18N
         menuItemPaso4.setText("Paso 4");
-        menuItemPaso4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemPaso4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuInstrucciones.add(menuItemPaso4);
 
         jMenu3.add(menuInstrucciones);
@@ -191,7 +191,7 @@ public class VistaExcel extends javax.swing.JFrame {
         menuItemAcercaDe.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         menuItemAcercaDe.setIcon(new javax.swing.ImageIcon("C:\\imgsistemasalones\\acercade.png")); // NOI18N
         menuItemAcercaDe.setText("Acerca de");
-        menuItemAcercaDe.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuItemAcercaDe.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenu3.add(menuItemAcercaDe);
 
         menuBarDisponibilidad.add(jMenu3);
