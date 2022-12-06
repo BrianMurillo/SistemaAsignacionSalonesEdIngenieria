@@ -173,9 +173,9 @@ public class GeneracionHorario {
             
             //Asignar horarios de -----------LUNES-------------
             while(y < filas){                
-                if(!"-".equals(tablaD.getValueAt(y, 5).toString()) && !"s/a".equals(tablaD.getValueAt(y , 5).toString())){
+                if(!"-".equals(tablaD.getValueAt(y, 6).toString()) && !"s/a".equals(tablaD.getValueAt(y , 6).toString())){
                     //Obetenemos salon de tabla
-                    salon = tablaD.getValueAt(y, 5).toString();
+                    salon = tablaD.getValueAt(y, 6).toString();
                     switch(salon){
                         case "D1":                            
                             obtenerDatos=obtenerDatosTablaLunes(y,tablaD); 
@@ -446,9 +446,9 @@ public class GeneracionHorario {
             y=0;
             //Asignar horarios de -----------Martes-------------
             while(y < filas){                
-                if(!"-".equals(tablaD.getValueAt(y, 7).toString()) && !"s/a".equals(tablaD.getValueAt(y , 7).toString())){
+                if(!"-".equals(tablaD.getValueAt(y, 8).toString()) && !"s/a".equals(tablaD.getValueAt(y , 8).toString())){
                     //Obetenemos salon de tabla
-                    salon = tablaD.getValueAt(y, 7).toString();
+                    salon = tablaD.getValueAt(y, 8).toString();
                     switch(salon){
                         case "D1":                            
                             obtenerDatos=obtenerDatosTablaMartes(y,tablaD);
@@ -720,9 +720,9 @@ public class GeneracionHorario {
             y=0;
             //Asignar horarios de -----------Miercoles-------------
             while(y < filas){                
-                if(!"-".equals(tablaD.getValueAt(y, 9).toString()) && !"s/a".equals(tablaD.getValueAt(y , 9).toString())){
+                if(!"-".equals(tablaD.getValueAt(y, 10).toString()) && !"s/a".equals(tablaD.getValueAt(y , 10).toString())){
                     //Obetenemos salon de tabla
-                    salon = tablaD.getValueAt(y, 9).toString();
+                    salon = tablaD.getValueAt(y, 10).toString();
                     switch(salon){
                         case "D1":                            
                             obtenerDatos=obtenerDatosTablaMiercoles(y,tablaD);
@@ -994,9 +994,9 @@ public class GeneracionHorario {
             y=0;
             //Asignar horarios de ----------Jueves-------------
             while(y < filas){                
-                if(!"-".equals(tablaD.getValueAt(y, 11).toString()) && !"s/a".equals(tablaD.getValueAt(y , 11).toString())){
+                if(!"-".equals(tablaD.getValueAt(y, 12).toString()) && !"s/a".equals(tablaD.getValueAt(y , 12).toString())){
                     //Obetenemos salon de tabla
-                    salon = tablaD.getValueAt(y, 11).toString();
+                    salon = tablaD.getValueAt(y, 12).toString();
                     switch(salon){
                         case "D1":                            
                             obtenerDatos=obtenerDatosTablaJueves(y,tablaD);
@@ -1268,9 +1268,9 @@ public class GeneracionHorario {
             y=0;
             //Asignar horarios de ----------Viernes-------------
             while(y < filas){                
-                if(!"-".equals(tablaD.getValueAt(y, 13).toString()) && !"s/a".equals(tablaD.getValueAt(y , 13).toString())){
+                if(!"-".equals(tablaD.getValueAt(y, 14).toString()) && !"s/a".equals(tablaD.getValueAt(y , 14).toString())){
                     //Obetenemos salon de tabla
-                    salon = tablaD.getValueAt(y, 13).toString();
+                    salon = tablaD.getValueAt(y, 14).toString();
                     switch(salon){
                         case "D1":                            
                             obtenerDatos=obtenerDatosTablaViernes(y,tablaD);
@@ -1603,65 +1603,65 @@ public class GeneracionHorario {
     //La variable "y" repesenta la columna
     public String[] obtenerDatosTablaLunes(int y, JTable tabla) {
         //Secuencia
-        datos[0] = tabla.getValueAt(y, 0).toString();
+        datos[0] = tabla.getValueAt(y, 1).toString();
         //Nombre materia
-        datos[1] = tabla.getValueAt(y, 1).toString();
+        datos[1] = tabla.getValueAt(y, 2).toString();
         //Nombre Profesor
-        datos[2] = tabla.getValueAt(y, 3).toString();
+        datos[2] = tabla.getValueAt(y, 4).toString();
         //Hora lunes
-        datos[3] = tabla.getValueAt(y, 4).toString();
+        datos[3] = tabla.getValueAt(y, 5).toString();
         //Salon
-        datos[4] = tabla.getValueAt(y, 5).toString();
+        datos[4] = tabla.getValueAt(y, 6).toString();
         //Academia
-        datos[5] = tabla.getValueAt(y, 2).toString();
+        datos[5] = tabla.getValueAt(y, 3).toString();
         datos[6] = "";
         datos[7] = "";
         return datos;
     }
     
     public String[] obtenerDatosTablaMartes(int y, JTable tabla){
-        datos[0] = tabla.getValueAt(y, 0).toString();
-        datos[1] = tabla.getValueAt(y, 1).toString();
-        datos[2] = tabla.getValueAt(y, 3).toString();
-        datos[3] = tabla.getValueAt(y, 6).toString();
-        datos[4] = tabla.getValueAt(y, 7).toString();
-        datos[5] = tabla.getValueAt(y, 2).toString();
+        datos[0] = tabla.getValueAt(y, 1).toString();
+        datos[1] = tabla.getValueAt(y, 2).toString();
+        datos[2] = tabla.getValueAt(y, 4).toString();
+        datos[3] = tabla.getValueAt(y, 7).toString();
+        datos[4] = tabla.getValueAt(y, 8).toString();
+        datos[5] = tabla.getValueAt(y, 3).toString();
         datos[6] = "";
         datos[7] = "";
         return datos;
     }
     
     public String[] obtenerDatosTablaMiercoles(int y, JTable tabla){
-        datos[0] = tabla.getValueAt(y, 0).toString();
-        datos[1] = tabla.getValueAt(y, 1).toString();
-        datos[2] = tabla.getValueAt(y, 3).toString();
-        datos[3] = tabla.getValueAt(y, 8).toString();
-        datos[4] = tabla.getValueAt(y, 9).toString();
-        datos[5] = tabla.getValueAt(y, 2).toString();
+        datos[0] = tabla.getValueAt(y, 1).toString();
+        datos[1] = tabla.getValueAt(y, 2).toString();
+        datos[2] = tabla.getValueAt(y, 4).toString();
+        datos[3] = tabla.getValueAt(y, 9).toString();
+        datos[4] = tabla.getValueAt(y, 10).toString();
+        datos[5] = tabla.getValueAt(y, 3).toString();
         datos[6] = "";
         datos[7] = "";
         return datos;
     }
     
     public String[] obtenerDatosTablaJueves(int y, JTable tabla){
-        datos[0] = tabla.getValueAt(y, 0).toString();
-        datos[1] = tabla.getValueAt(y, 1).toString();
-        datos[2] = tabla.getValueAt(y, 3).toString();
-        datos[3] = tabla.getValueAt(y, 10).toString();
-        datos[4] = tabla.getValueAt(y, 11).toString();
-        datos[5] = tabla.getValueAt(y, 2).toString();
+        datos[0] = tabla.getValueAt(y, 1).toString();
+        datos[1] = tabla.getValueAt(y, 2).toString();
+        datos[2] = tabla.getValueAt(y, 4).toString();
+        datos[3] = tabla.getValueAt(y, 11).toString();
+        datos[4] = tabla.getValueAt(y, 12).toString();
+        datos[5] = tabla.getValueAt(y, 3).toString();
         datos[6] = "";
         datos[7] = "";
         return datos;
     }
     
     public String[] obtenerDatosTablaViernes(int y, JTable tabla){
-        datos[0] = tabla.getValueAt(y, 0).toString();
-        datos[1] = tabla.getValueAt(y, 1).toString();
-        datos[2] = tabla.getValueAt(y, 3).toString();
-        datos[3] = tabla.getValueAt(y, 12).toString();
-        datos[4] = tabla.getValueAt(y, 13).toString();
-        datos[5] = tabla.getValueAt(y, 2).toString();
+        datos[0] = tabla.getValueAt(y, 1).toString();
+        datos[1] = tabla.getValueAt(y, 2).toString();
+        datos[2] = tabla.getValueAt(y, 4).toString();
+        datos[3] = tabla.getValueAt(y, 13).toString();
+        datos[4] = tabla.getValueAt(y, 14).toString();
+        datos[5] = tabla.getValueAt(y, 3).toString();
         datos[6] = "";
         datos[7] = "";
         return datos;        
